@@ -1,0 +1,257 @@
+<class 'netCDF4.Variable'>
+float32 t2m(step, latitude, longitude)
+    _FillValue: nan
+    GRIB_paramId: 167
+    GRIB_dataType: fc
+    GRIB_numberOfPoints: 1038240
+    GRIB_typeOfLevel: heightAboveGround
+    GRIB_stepUnits: 1
+    GRIB_stepType: instant
+    GRIB_gridType: regular_ll
+    GRIB_uvRelativeToGrid: 0
+    GRIB_NV: 0
+    GRIB_Nx: 1440
+    GRIB_Ny: 721
+    GRIB_cfName: air_temperature
+    GRIB_cfVarName: t2m
+    GRIB_gridDefinitionDescription: Latitude/longitude. Also called equidistant cylindrical, or Plate Carree
+    GRIB_iDirectionIncrementInDegrees: 0.25
+    GRIB_iScansNegatively: 0
+    GRIB_jDirectionIncrementInDegrees: 0.25
+    GRIB_jPointsAreConsecutive: 0
+    GRIB_jScansPositively: 0
+    GRIB_latitudeOfFirstGridPointInDegrees: 90.0
+    GRIB_latitudeOfLastGridPointInDegrees: -90.0
+    GRIB_longitudeOfFirstGridPointInDegrees: 0.0
+    GRIB_longitudeOfLastGridPointInDegrees: 359.75
+    GRIB_missingValue: 3.4028234663852886e+38
+    GRIB_name: 2 metre temperature
+    GRIB_parameterName: Temperature
+    GRIB_parameterUnits: K
+    GRIB_shapeOfTheEarth: 6
+    GRIB_shortName: 2t
+    GRIB_stepRange: 0
+    GRIB_units: K
+    long_name: 2 metre temperature
+    units: K
+    standard_name: air_temperature
+    grid_mapping: gribfile_projection
+    coordinates: time step heightAboveGround latitude longitude valid_time
+unlimited dimensions:
+current shape = (48, 141, 141)
+filling on
+<class 'netCDF4.Variable'>
+float32 d2m(step, latitude, longitude)
+    _FillValue: nan
+    GRIB_paramId: 168
+    GRIB_dataType: fc
+    GRIB_numberOfPoints: 1038240
+    GRIB_typeOfLevel: heightAboveGround
+    GRIB_stepUnits: 1
+    GRIB_stepType: instant
+    GRIB_gridType: regular_ll
+    GRIB_uvRelativeToGrid: 0
+    GRIB_NV: 0
+    GRIB_Nx: 1440
+    GRIB_Ny: 721
+    GRIB_cfName: unknown
+    GRIB_cfVarName: d2m
+    GRIB_gridDefinitionDescription: Latitude/longitude. Also called equidistant cylindrical, or Plate Carree
+    GRIB_iDirectionIncrementInDegrees: 0.25
+    GRIB_iScansNegatively: 0
+    GRIB_jDirectionIncrementInDegrees: 0.25
+    GRIB_jPointsAreConsecutive: 0
+    GRIB_jScansPositively: 0
+    GRIB_latitudeOfFirstGridPointInDegrees: 90.0
+    GRIB_latitudeOfLastGridPointInDegrees: -90.0
+    GRIB_longitudeOfFirstGridPointInDegrees: 0.0
+    GRIB_longitudeOfLastGridPointInDegrees: 359.75
+    GRIB_missingValue: 3.4028234663852886e+38
+    GRIB_name: 2 metre dewpoint temperature
+    GRIB_parameterName: Dew point temperature
+    GRIB_parameterUnits: K
+    GRIB_shapeOfTheEarth: 6
+    GRIB_shortName: 2d
+    GRIB_stepRange: 0
+    GRIB_units: K
+    long_name: 2 metre dewpoint temperature
+    units: K
+    standard_name: unknown
+    grid_mapping: gribfile_projection
+    coordinates: time step heightAboveGround latitude longitude valid_time
+unlimited dimensions:
+current shape = (48, 141, 141)
+filling on
+<class 'netCDF4.Variable'>
+float32 r2(step, latitude, longitude)
+    _FillValue: nan
+    GRIB_paramId: 260242
+    GRIB_dataType: fc
+    GRIB_numberOfPoints: 1038240
+    GRIB_typeOfLevel: heightAboveGround
+    GRIB_stepUnits: 1
+    GRIB_stepType: instant
+    GRIB_gridType: regular_ll
+    GRIB_uvRelativeToGrid: 0
+    GRIB_NV: 0
+    GRIB_Nx: 1440
+    GRIB_Ny: 721
+    GRIB_cfName: relative_humidity
+    GRIB_cfVarName: r2
+    GRIB_gridDefinitionDescription: Latitude/longitude. Also called equidistant cylindrical, or Plate Carree
+    GRIB_iDirectionIncrementInDegrees: 0.25
+    GRIB_iScansNegatively: 0
+    GRIB_jDirectionIncrementInDegrees: 0.25
+    GRIB_jPointsAreConsecutive: 0
+    GRIB_jScansPositively: 0
+    GRIB_latitudeOfFirstGridPointInDegrees: 90.0
+    GRIB_latitudeOfLastGridPointInDegrees: -90.0
+    GRIB_longitudeOfFirstGridPointInDegrees: 0.0
+    GRIB_longitudeOfLastGridPointInDegrees: 359.75
+    GRIB_missingValue: 3.4028234663852886e+38
+    GRIB_name: 2 metre relative humidity
+    GRIB_parameterName: Relative humidity
+    GRIB_parameterUnits: %
+    GRIB_shapeOfTheEarth: 6
+    GRIB_shortName: 2r
+    GRIB_stepRange: 0
+    GRIB_units: %
+    long_name: 2 metre relative humidity
+    units: %
+    standard_name: relative_humidity
+    grid_mapping: gribfile_projection
+    coordinates: time step heightAboveGround latitude longitude valid_time
+unlimited dimensions:
+current shape = (48, 141, 141)
+filling on
+<class 'netCDF4.Variable'>
+float32 wspd(step, latitude, longitude)
+    _FillValue: nan
+    long_name: wind magnitude
+    coordinates: gribfile_projection heightAboveGround surface time valid_time
+unlimited dimensions:
+current shape = (48, 141, 141)
+filling on
+<class 'netCDF4.Variable'>
+float32 sp(step, latitude, longitude)
+    _FillValue: nan
+    GRIB_paramId: 134
+    GRIB_dataType: fc
+    GRIB_numberOfPoints: 1038240
+    GRIB_typeOfLevel: surface
+    GRIB_stepUnits: 1
+    GRIB_stepType: instant
+    GRIB_gridType: regular_ll
+    GRIB_uvRelativeToGrid: 0
+    GRIB_NV: 0
+    GRIB_Nx: 1440
+    GRIB_Ny: 721
+    GRIB_cfName: surface_air_pressure
+    GRIB_cfVarName: sp
+    GRIB_gridDefinitionDescription: Latitude/longitude. Also called equidistant cylindrical, or Plate Carree
+    GRIB_iDirectionIncrementInDegrees: 0.25
+    GRIB_iScansNegatively: 0
+    GRIB_jDirectionIncrementInDegrees: 0.25
+    GRIB_jPointsAreConsecutive: 0
+    GRIB_jScansPositively: 0
+    GRIB_latitudeOfFirstGridPointInDegrees: 90.0
+    GRIB_latitudeOfLastGridPointInDegrees: -90.0
+    GRIB_longitudeOfFirstGridPointInDegrees: 0.0
+    GRIB_longitudeOfLastGridPointInDegrees: 359.75
+    GRIB_missingValue: 3.4028234663852886e+38
+    GRIB_name: Surface pressure
+    GRIB_parameterName: Pressure
+    GRIB_parameterUnits: Pa
+    GRIB_shapeOfTheEarth: 6
+    GRIB_shortName: sp
+    GRIB_stepRange: 0
+    GRIB_units: Pa
+    long_name: Surface pressure
+    units: Pa
+    standard_name: surface_air_pressure
+    grid_mapping: gribfile_projection
+    coordinates: time step surface latitude longitude valid_time
+unlimited dimensions:
+current shape = (48, 141, 141)
+filling on
+<class 'netCDF4.Variable'>
+int64 time()
+    long_name: initial time of forecast
+    standard_name: forecast_reference_time
+    units: seconds since 1970-01-01
+    calendar: proleptic_gregorian
+unlimited dimensions:
+current shape = ()
+filling on, default _FillValue of -9223372036854775806 used
+<class 'netCDF4.Variable'>
+float64 step(step)
+    _FillValue: nan
+    long_name: time since forecast_reference_time
+    standard_name: forecast_period
+    units: hours
+unlimited dimensions:
+current shape = (48,)
+filling on
+<class 'netCDF4.Variable'>
+float64 heightAboveGround()
+    _FillValue: nan
+    long_name: height above the surface
+    units: m
+    positive: up
+    standard_name: height
+unlimited dimensions:
+current shape = ()
+filling on
+<class 'netCDF4.Variable'>
+float64 latitude(latitude)
+    _FillValue: nan
+    units: degrees_north
+    standard_name: latitude
+    long_name: latitude
+    stored_direction: decreasing
+unlimited dimensions:
+current shape = (141,)
+filling on
+<class 'netCDF4.Variable'>
+float64 longitude(longitude)
+    _FillValue: nan
+    units: degrees_east
+    standard_name: longitude
+    long_name: longitude
+unlimited dimensions:
+current shape = (141,)
+filling on
+<class 'netCDF4.Variable'>
+float64 valid_time(step)
+    _FillValue: nan
+    standard_name: time
+    long_name: time
+    units: seconds since 1970-01-01
+    calendar: proleptic_gregorian
+unlimited dimensions:
+current shape = (48,)
+filling on
+<class 'netCDF4.Variable'>
+float64 gribfile_projection()
+    crs_wkt: GEOGCRS["unknown",DATUM["unknown",ELLIPSOID["unknown",6371229,0,LENGTHUNIT["metre",1,ID["EPSG",9001]]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8901]],CS[ellipsoidal,2],AXIS["longitude",east,ORDER[1],ANGLEUNIT["degree",0.0174532925199433,ID["EPSG",9122]]],AXIS["latitude",north,ORDER[2],ANGLEUNIT["degree",0.0174532925199433,ID["EPSG",9122]]]]
+    semi_major_axis: 6371229.0
+    semi_minor_axis: 6371229.0
+    inverse_flattening: 0.0
+    reference_ellipsoid_name: unknown
+    longitude_of_prime_meridian: 0.0
+    prime_meridian_name: Greenwich
+    geographic_crs_name: unknown
+    horizontal_datum_name: unknown
+    grid_mapping_name: latitude_longitude
+    long_name: GFS model grid projection
+unlimited dimensions:
+current shape = ()
+filling on, default _FillValue of 9.969209968386869e+36 used
+<class 'netCDF4.Variable'>
+float64 surface()
+    _FillValue: nan
+    long_name: original GRIB coordinate for key: level(surface)
+    units: 1
+unlimited dimensions:
+current shape = ()
+filling on

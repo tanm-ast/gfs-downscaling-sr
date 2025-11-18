@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Checkpoints, weights, logs
+*.ckpt
+wandb/
+logs/
+
+# Data (large)
+datasets/
+*.nc
+
+# OS / IDE stuff
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Docs
+*.pdf
+*.docx
+
+debug.log
+debug-internal.log
+
+#Weights And Biases logs
+wandb/
+
+# Older eval files
+sr_eval_fulfilled_*.py
