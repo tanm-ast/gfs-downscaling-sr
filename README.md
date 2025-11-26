@@ -168,7 +168,7 @@ We compare against three baselines: (1) spatial bicubic upsampling, (2) temporal
 
 ## Qualitative Examples
 
-Selected examples (HR, Model, Bicubic, TempInterp, ST-Combined) for representative variables and lead times. Colorbars are shared across panels for comparability.
+Selected examples (Order of images from left to right HR, My Model, Bicubic, TempInterp, ST-Combined) for representative variables and lead times. Colorbars are shared across panels for comparability.
 
 <img src="./media/media/image1.png" style="width:6.8in;height:1.08574in" />
 
