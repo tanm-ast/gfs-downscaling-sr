@@ -34,7 +34,7 @@ This document summarizes the approach, model architecture, training methodology,
 
 **models/factorized_sr.py:** Model definition. Temporal upscaling via dilated 1D convolutions; spatial upscaling via EDSR-inspired residual blocks and pixel-shuffle layers.
 
-**data/gfs_downscaling.py:** Data pipeline utilities. Loads NetCDF files, standardizes variables, and generates LR inputs by Gaussian blur + decimation (space) and sub-sampling (time). Provides patch extraction and splits.
+**data/gfs_downscaling.py:** Data pipeline utilities. Loads NetCDF files, standardizes variables, and generates LR inputs by Gaussian blur + decimation (space) and sub-sampling (time). Provides patch extraction and splits.Also uses a handmade LRU cache function to prevent repeated redundant loading of data files and consequently boost efficiency.
 
 **utils/trainer_factory.py:** Helper to instantiate the trainer, logging, callbacks, and LR schedule settings in a consistent way.
 
@@ -71,6 +71,21 @@ We use Adam/AdamW with weight decay, a cosine learning-rate schedule with warm-u
 ## Results
 
 We compare against three baselines: (1) spatial bicubic upsampling, (2) temporal interpolation via natural cubic splines, and (3) spatio-temporal interpolation (temporal interpolation plus spatial alignment). The model outperforms bicubic by all metrics and produces perceptually sharper features; however, pixelwise metrics can favor smoother methods like temporal interpolation when sharp structures shift slightly.
+
+## Qualitative Examples
+
+Selected examples (Order of images from left to right: HR, My Model, Bicubic, TempInterp, ST-Combined) for representative variables and lead times. Colorbars are shared across panels for comparability.
+
+<img src="./media/media/image1.png" style="width:6.8in;height:1.08574in" />
+
+<img src="./media/media/image2.png" style="width:6.8in;height:1.08574in" />
+
+<img src="./media/media/image3.png" style="width:6.8in;height:1.08574in" />
+
+<img src="./media/media/image4.png" style="width:6.8in;height:1.08574in" />
+
+<img src="./media/media/image5.png" style="width:6.8in;height:1.08574in" />
+
 
 ### Per-Variable Metrics (Standardized)
 
@@ -166,19 +181,6 @@ We compare against three baselines: (1) spatial bicubic upsampling, (2) temporal
 | tempinterp  | 1.481480 | 1.049362 | 17.731959 | 0.403731 |
 | st_combined | 1.481480 | 1.049362 | 17.731959 | 0.403731 |
 
-## Qualitative Examples
-
-Selected examples (Order of images from left to right: HR, My Model, Bicubic, TempInterp, ST-Combined) for representative variables and lead times. Colorbars are shared across panels for comparability.
-
-<img src="./media/media/image1.png" style="width:6.8in;height:1.08574in" />
-
-<img src="./media/media/image2.png" style="width:6.8in;height:1.08574in" />
-
-<img src="./media/media/image3.png" style="width:6.8in;height:1.08574in" />
-
-<img src="./media/media/image4.png" style="width:6.8in;height:1.08574in" />
-
-<img src="./media/media/image5.png" style="width:6.8in;height:1.08574in" />
 
 ## Discussion and Recommendations
 
