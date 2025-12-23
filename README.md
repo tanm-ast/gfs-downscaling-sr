@@ -1,4 +1,4 @@
-# GFS Downscaling with Factorized Super-Resolution
+# GFS Upscaling with Factorized Super-Resolution
 
 This repository contains a prototype deep learning pipeline for spatio-temporal
 
@@ -24,9 +24,9 @@ pip install -r requirements.txt
 
 python train_factorized.py --data_root ../datasets/GFS --ckpt ./checkpoints/...
 
-# Super-Resolution Prototype for GFS Downscaling
+# Super-Resolution Prototype for GFS Upscaling
 
-This document summarizes the approach, model architecture, training methodology, and results for a super-resolution prototype developed for GFS downscaling. The goal is to reconstruct high-resolution spatio-temporal fields from coarse-resolution inputs.
+This document summarizes the approach, model architecture, training methodology, and results for a super-resolution prototype developed for GFS upscaling. The goal is to reconstruct high-resolution spatio-temporal fields from coarse-resolution inputs.
 
 ## Codebase Overview
 
